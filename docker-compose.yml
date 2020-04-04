@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  accountownerserver:
+    image: ${DOCKER_REGISTRY-}accountownerserver
+    build:
+      context: .
+      dockerfile: SampleRepository/Dockerfile
